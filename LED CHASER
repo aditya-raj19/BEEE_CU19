@@ -1,1 +1,24 @@
+AIM :DESIGN LED CHASER
+APPARATUS: Arduino,Led,wire,Breadboard
 
+code:
+void setup()
+{ int i;
+  for( i=8;i<=11;i++){
+  pinMode(i, OUTPUT);}
+}
+void loop()
+  
+{int j;
+  for(  j=8;j<=11;j++){
+      digitalWrite(j, HIGH);
+ delay(100);
+    digitalWrite(j, LOW);
+  delay(100);
+    }
+ int i;
+ for(j=10;j>8;j--){
+     digitalWrite(j, HIGH);
+ delay(100);
+    digitalWrite(j, LOW);
+   delay(100);}
